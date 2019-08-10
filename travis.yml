@@ -1,0 +1,10 @@
+language: c
+
+before_install:
+  sudo apt install -y valac valac libgee-0.8-dev libarchive-dev libgirepository1.0-dev gobject-introspection meson ninja-build
+
+script:
+  - mkdir build
+  - cd build
+  - meson ..
+  - ninja
