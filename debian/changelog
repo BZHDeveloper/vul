@@ -1,0 +1,29 @@
+vul (0.3-1) bionic; urgency=low
+
+  * JSON : improve serialization.
+  
+ -- Yannick Inizan <inizan.yannick@gmail.com>  Mon, 02 Apr 2018 22:13:12 +0200
+
+vul (0.2.1.1-1) bionic; urgency=low
+
+  * debian : fix libgjson-1.0-0 installation.
+  
+ -- Yannick Inizan <inizan.yannick@gmail.com>  Thu, 02 Nov 2017 08:24:21 +0100
+
+vul (0.2.1-1) bionic; urgency=low
+
+  * GJson : fix Node value.
+  
+ -- Yannick Inizan <inizan.yannick@gmail.com>  Sat, 28 Oct 2017 14:03:21 +0200
+
+vul (0.2+dfsg-1) bionic; urgency=low
+
+  * GJson : Schemas, Variant reader & writer
+  
+ -- Yannick Inizan <inizan.yannick@gmail.com>  Thu, 26 Oct 2017 12:04:21 +0200
+
+vul (0.1-1) xenial; urgency=low
+
+  * initial release
+ 
+ -- Yannick Inizan <inizan.yannick@gmail.com>  Mon, 26 Jun 2017 23:10:01 +0200

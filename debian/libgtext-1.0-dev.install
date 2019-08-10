@@ -1,0 +1,5 @@
+usr/lib/*/libgtext-1.0.so
+usr/lib/*/pkgconfig/gtext-1.0.pc
+usr/include/gtext-1.0
+usr/share/vala/vapi/gtext-1.0.*
+usr/share/gir-1.0/GText-1.0.gir

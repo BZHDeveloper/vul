@@ -1,0 +1,5 @@
+usr/lib/*/libgcl-1.0.so
+usr/lib/*/pkgconfig/gcl-1.0.pc
+usr/include/gcl-1.0
+usr/share/vala/vapi/gcl-1.0.*
+usr/share/gir-1.0/Gcl-1.0.gir

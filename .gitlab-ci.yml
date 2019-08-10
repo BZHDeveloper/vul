@@ -1,0 +1,22 @@
+image: ubuntu:devel
+
+stages:
+  - build
+  - deploy
+
+variables:
+  DEPENDENCIES: valac libgee-0.8-dev libarchive-dev libgirepository1.0-dev gobject-introspection
+  GIT_SUBMODULE_STRATEGY: normal
+
+before_script:
+  - export DEBIAN_FRONTEND=noninteractive
+  - apt update
+  - apt -y install $DEPENDENCIES
+
+build:
+  stage: build
+  script:
+  - meson _build
+  - cd _build
+  - ninja
+  - ninja install

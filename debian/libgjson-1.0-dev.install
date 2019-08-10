@@ -1,0 +1,5 @@
+usr/lib/*/libgjson-1.0.so
+usr/lib/*/pkgconfig/gjson-1.0.pc
+usr/include/gjson-1.0
+usr/share/vala/vapi/gjson-1.0.*
+usr/share/gir-1.0/GJson-1.0.gir

@@ -1,0 +1,1 @@
+option('with-vala', type : 'string', value : '0.40', description : 'Vala version')

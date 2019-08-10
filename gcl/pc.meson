@@ -1,0 +1,11 @@
+prefix=@prefix@
+libdir=@prefix@/@libdir@
+datadir=@prefix@/share
+includedir=@prefix@/include/gcl-1.0
+
+Name: Gcl
+Description: I/O archive library.
+Version: 1.0
+Requires: @PCDEPS@
+Libs: -L${libdir} -lgcl-1.0
+Cflags: -I${includedir}

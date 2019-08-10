@@ -1,0 +1,101 @@
+Source: vul
+Section: libs
+Priority: optional
+Maintainer: Yannick Inizan <inizan.yannick@gmail.com>
+Build-Depends: debhelper (>= 9),
+	meson,
+	ninja-build,
+	valac,
+	libarchive-dev,
+	libgee-0.8-dev,
+	gir1.2-glib-2.0 (>= 0.9.12),
+	libgirepository1.0-dev (>= 0.9.12),
+	gobject-introspection (>= 0.9.12-4~)
+Standards-Version: 3.9.6
+Homepage: https://wiki.gnome.org/GXml
+#Vcs-Git: git://anonscm.debian.org/collab-maint/gxml-0.6.git
+#Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/gxml-0.6.git;a=summary
+
+Package: libgtext-1.0-0
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: I/O text library
+ GText provides classes to read & write texts with different encodings.
+
+Package: libgtext-1.0-dev
+Section: libdevel
+Architecture: any
+Depends: libgtext-1.0-0 (= ${binary:Version}),
+		 libglib2.0-dev,
+		 ${misc:Depends}
+Description: I/O text library (development files)
+ GText provides classes to read & write texts with different encodings.
+ .
+ This package contains the development files.
+
+Package: gir1.2-gtext-1.0
+Architecture: any
+Section: introspection
+Depends: ${gir:Depends}, ${misc:Depends}
+Description: I/O text library (GObject-Introspection)
+ GText provides classes to read & write texts with different encodings.
+ .
+ This package contains introspection data for GText, which can be used
+ to generate dynamic bindings.
+
+Package: libgjson-1.0-0
+Architecture: any
+Section: libs
+Depends: libgtext-1.0-0, ${shlibs:Depends}, ${misc:Depends}
+Description: JSON library
+ GJson provides classes to read & write JSON and BSON data.
+
+Package: libgjson-1.0-dev
+Section: libdevel
+Architecture: any
+Depends: libgjson-1.0-0 (= ${binary:Version}),
+		 libgtext-1.0-dev,
+		 ${misc:Depends}
+Description: JSON library (development files)
+ GJson provides classes to read & write JSON and BSON data.
+ .
+ This package contains the development files.
+
+Package: gir1.2-gjson-1.0
+Architecture: any
+Section: introspection
+Depends: gir1.2-gtext-1.0, gir1.2-gee-0.8, ${gir:Depends}, ${misc:Depends}
+Description: JSON library (GObject-Introspection)
+ GJson provides classes to read & write JSON and BSON data.
+ .
+ This package contains introspection data for GJson, which can be used
+ to generate dynamic bindings.
+
+Package: libgcl-1.0-0
+Architecture: any
+Section: libs
+Depends: libgee-0.8-0, ${shlibs:Depends}, ${misc:Depends}
+Description: Compression library
+ Gcl provides classes to create or read archives.
+
+Package: libgcl-1.0-dev
+Section: libdevel
+Architecture: any
+Depends: libgcl-1.0-0 (= ${binary:Version}),
+		 libgee-0.8-dev,
+		 ${misc:Depends}
+Description: Compression library (development files)
+ Gcl provides classes to create or read archives.
+ .
+ This package contains the development files.
+
+Package: gir1.2-gcl-1.0
+Architecture: any
+Section: introspection
+Depends: ${gir:Depends}, ${misc:Depends}
+Description: Compression library (GObject-Introspection)
+ Gcl provides classes to create or read archives.
+ .
+ This package contains introspection data for Gcl, which can be used
+ to generate dynamic bindings.
