@@ -1,7 +1,9 @@
 language: c
 
 before_install:
-  - sudo do-release-upgrade
+  - sudo apt update
+  - sudo apt dist-upgrade -y
+  - sudo do-release-upgrade -y
   - sudo apt update
   - sudo apt install -y valac valac libgee-0.8-dev libarchive-dev libgirepository1.0-dev gobject-introspection meson ninja-build
 
